@@ -1,0 +1,30 @@
+.circle {
+  position: relative;
+  border: 1px solid #727280;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.items_number {
+  position: absolute;
+  top: -5px;
+  left: 30px;
+  width: 20px;
+  background-color: white;
+  font-weight: 600;
+  color: #2967FF;
+  padding: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.icon {
+  z-index: 1;
+}

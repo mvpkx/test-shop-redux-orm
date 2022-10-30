@@ -1,0 +1,19 @@
+.top_bar {
+  width: 100%;
+  box-sizing: border-box;
+  height: 82px;
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #F0F4FB;
+  width: 100%;
+  padding-bottom: 30px;
+}

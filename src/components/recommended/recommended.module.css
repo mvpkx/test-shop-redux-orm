@@ -1,0 +1,31 @@
+.container {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 42px;
+  padding-top: 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 10px;
+}
+
+.title {
+  font-size: 1.26rem;
+  margin: 0;
+}
+
+.settings {
+  margin-left: 11.5%;
+  text-decoration: none;
+  font-size: 0.77rem;
+  cursor: pointer;
+  color: #2967FF;
+}
+
+.settings:hover {
+  text-decoration: underline;
+}

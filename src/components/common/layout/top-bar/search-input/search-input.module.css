@@ -1,0 +1,39 @@
+.container {
+  position: relative;
+  width: 468px;
+}
+
+.input {
+  border: 1px solid rgba(240, 244, 251, 1);
+  border-radius: 36px;
+  width: 428px;
+  padding: 15px 18px;
+  font-family: 'raleway';
+  font-size: 1rem;
+}
+
+.container:placeholder {
+  color:#727280;
+}
+
+.button {
+  top: 5px;
+  right: 7px;
+  position: absolute;
+  width: 94px;
+  height: 42px;
+  background-color: #F0F4FB;
+  border-radius: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #d4e0f8;
+}
+
+.button:active {
+  background-color: #8293b6;
+}

@@ -10,6 +10,7 @@
 
 # production
 /build
+/figma
 
 # misc
 .DS_Store

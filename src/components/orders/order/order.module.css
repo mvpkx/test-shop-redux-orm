@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 1px solid #AEC2EA;
+  border-radius: 32px;
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+  width: calc(50% - 20px);
+}
+
+.info {
+  margin: 10px;
+}
+
+.info h4 {
+  margin: 0;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 0.74rem;
+  color: #727280;
+}
+
+.info p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.8rem;
+}

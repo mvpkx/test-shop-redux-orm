@@ -1,0 +1,113 @@
+.container {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0px 42px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin: 10px 10px;
+  font-size: 0.87rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 10px;
+}
+
+.form_left, .form_right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form_stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-weight: 600;
+}
+
+.input {
+  border: none;
+  margin-top: 12px;
+  margin-bottom: 34px;
+  padding: 12px 0px;
+}
+
+.input_bordered {
+  border: 1px solid rgba(240, 244, 251, 1);
+  border-radius: 36px;
+  width: 292px;
+  padding: 12px 18px;
+  font-family: 'raleway';
+  font-size: 0.87rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.form_stat {
+  padding: 20px;
+  background-color: #F0F4FB;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.form_stat * {
+  margin: 0;
+}
+
+.form_stat div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 0px;
+}
+
+.form_stat h4 {
+  font-weight: 400;
+}
+
+.form_stat p {
+  font-size: 1rem;
+}
+
+.total {
+  padding-top: 10px;
+}
+
+.total h4 {
+  font-size: 1rem;
+}
+
+.total p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.button {
+  margin-top: 10px;
+  background-color: #2967FF;
+  border-radius: 51px;
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 400;
+  padding: 9.5px 0px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #325cc7;
+}
+
+.button:active {
+  background-color: #223d80;
+}

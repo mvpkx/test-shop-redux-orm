@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container * {
+  display: block;
+  font-size: 0.8rem;
+  margin: 2px 0px;
+}
+
+.dots {
+  flex: 1;
+  background-image: linear-gradient(to right, black 25%, rgba(255,255,255,0) 0%);
+  background-position: bottom;
+  background-size: 5px 1px;
+  background-repeat: repeat-x;
+  margin: 0px 5px;
+  height: 0.65rem;
+}

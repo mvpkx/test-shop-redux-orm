@@ -1,25 +1,47 @@
-import React from 'react';
-import logo from './logo.svg';
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, {useEffect} from 'react';
+import axios from 'axios';
+import {Routes, Route} from 'react-router-dom';
 import './App.css';
+import CartPage from './pages/cart-page';
+import NewOrderPage from './pages/new-order-page';
+import OrdersPage from './pages/orders-page';
+import RecommendedPage from './pages/recommended-page';
+import {useDispatch} from 'react-redux';
 
-function App() {
+function App(): JSX.Element {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    axios
+      .get('/api/Categories')
+      .then(resp => dispatch({type: 'LOAD_CATEGORIES', payload: resp.data}));
+    axios.get('/api/Products').then(resp => dispatch({type: 'LOAD_PRODUCTS', payload: resp.data}));
+    axios
+      .get('/api/ProductImages')
+      .then(resp => dispatch({type: 'LOAD_IMAGES', payload: resp.data}));
+    axios
+      .get('/api/ProductVariations')
+      .then(resp => dispatch({type: 'LOAD_VARIATIONS', payload: resp.data}));
+    axios
+      .get('/api/ProductVariationProperties')
+      .then(resp => dispatch({type: 'LOAD_VARIATION_PROPERTIES', payload: resp.data}));
+    axios
+      .get('/api/ProductVariationPropertyValues')
+      .then(resp => dispatch({type: 'LOAD_VARIATION_PROPERTY_VALUES', payload: resp.data}));
+    axios
+      .get('/api/ProductVariationPropertyListValues')
+      .then(resp => dispatch({type: 'LOAD_VARIATION_PROPERTY_LIST_VALUES', payload: resp.data}));
+    dispatch({type: 'CREATE_ORDER'});
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<RecommendedPage />} />
+      <Route path="/recommended" element={<RecommendedPage />} />
+      <Route path="/orders" element={<OrdersPage />} />
+      <Route path="/new-order" element={<NewOrderPage />} />
+      <Route path="/cart" element={<CartPage />} />
+    </Routes>
   );
 }
 

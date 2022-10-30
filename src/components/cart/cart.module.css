@@ -1,0 +1,116 @@
+.container {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 42px;
+  padding-top: 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin: 10px 10px;
+}
+
+.title {
+  font-size: 1.26rem;
+  margin: 0;
+}
+
+.clear {
+  font-size: 0.99rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #FF2D87;
+  margin-left: 28px;
+  margin-bottom: 1px;
+}
+
+.clear:hover {
+  text-decoration: underline;
+}
+
+.total_bar {
+  position: absolute;
+  top: 54px;
+  box-sizing: border-box;
+  width: 910px;
+  border: solid 1px #AEC2EA;
+  height: 102px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 55px;
+  margin: 30px 10px;
+  z-index: 1;
+}
+
+.total_bar_total {
+  display: flex;
+  flex-direction: column;
+}
+
+.total_bar_total_title {
+  font-size: 0.98rem;
+}
+
+.total_bar_total_value {
+  margin-top: 4px;
+  font-size: 1.37rem;
+  font-weight: 600;
+}
+
+.total_bar_button {
+  background-color: #2967FF;
+  border-radius: 51px;
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 400;
+  padding: 9.5px 0px;
+  width: 214px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.total_bar_button:hover {
+  background-color: #325cc7;
+}
+
+.total_bar_button:active {
+  background-color: #223d80;
+}
+
+.pictures {
+  position: relative;
+  height: 100%;
+}
+
+.picture_of_bag {
+  position: absolute;
+  right: 80px;
+  top: 0;
+}
+
+.picture_of_label {
+  position: absolute;
+  right: 60px;
+  top: 0;
+}
+
+.picture_of_cart {
+  position: absolute;
+  right: 10px;
+  top: 18px;
+}
+
+.items_container {
+  border: solid 1px #AEC2EA;
+  border-radius: 15px;
+  margin: 30px 10px;
+  padding-top: 98px;
+  z-index: -1;
+}
