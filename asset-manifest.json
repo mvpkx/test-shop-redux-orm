@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/test-shop-redux-orm/static/css/main.a387a804.css",
+    "main.js": "/test-shop-redux-orm/static/js/main.a4a7fc8e.js",
+    "static/media/google-play.svg": "/test-shop-redux-orm/static/media/google-play.ef5d9c7aac789b792b373c9516616785.svg",
+    "static/media/app-store.svg": "/test-shop-redux-orm/static/media/app-store.4673275b1f66f96d0e3dcb692afd2922.svg",
+    "static/media/bags.svg": "/test-shop-redux-orm/static/media/bags.3b26bebda5413d3b2cb33ff139f30854.svg",
+    "static/media/vk.svg": "/test-shop-redux-orm/static/media/vk.65b78175b35d7c024ea2ffc177744e6b.svg",
+    "static/media/bag.svg": "/test-shop-redux-orm/static/media/bag.bf1f53be88128b8f1fb5a4d31ff5185d.svg",
+    "static/media/cart.svg": "/test-shop-redux-orm/static/media/cart.2040cc730bb22849570f61b96a317770.svg",
+    "static/media/instagram.svg": "/test-shop-redux-orm/static/media/instagram.3160ec926326a19cabeb0ef85b3a4515.svg",
+    "static/media/label.svg": "/test-shop-redux-orm/static/media/label.5d13937c30632550fccded0264d6ae06.svg",
+    "static/media/cart-icon.svg": "/test-shop-redux-orm/static/media/cart-icon.e1de85b028ffabf7be6120ab193600d9.svg",
+    "static/media/delete.svg": "/test-shop-redux-orm/static/media/delete.e67550974836fe6218e1b7331c6504e3.svg",
+    "static/media/geo-icon.svg": "/test-shop-redux-orm/static/media/geo-icon.e386111a1fcab368e5ea52b77f519147.svg",
+    "index.html": "/test-shop-redux-orm/index.html",
+    "static/media/facebook.svg": "/test-shop-redux-orm/static/media/facebook.178805c4c66ce8b50e6a94500aaba0e2.svg",
+    "static/media/search-icon.svg": "/test-shop-redux-orm/static/media/search-icon.2fd54c2a30f7c29eabe658cb6d31f968.svg",
+    "main.a387a804.css.map": "/test-shop-redux-orm/static/css/main.a387a804.css.map",
+    "main.a4a7fc8e.js.map": "/test-shop-redux-orm/static/js/main.a4a7fc8e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a387a804.css",
+    "static/js/main.a4a7fc8e.js"
+  ]
+}
