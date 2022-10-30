@@ -17,3 +17,5 @@ export const SIDE_CARDS = [
 ];
 
 export const DELIVERY_PRICE = 200;
+
+export const API = 'https://test2.sionic.ru/';

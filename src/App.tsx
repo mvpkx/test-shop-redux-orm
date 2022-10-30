@@ -8,28 +8,31 @@ import NewOrderPage from './pages/new-order-page';
 import OrdersPage from './pages/orders-page';
 import RecommendedPage from './pages/recommended-page';
 import {useDispatch} from 'react-redux';
+import {API} from './utils/constants';
 
 function App(): JSX.Element {
   const dispatch = useDispatch();
   useEffect(() => {
     axios
-      .get('/api/Categories')
+      .get(`${API}/api/Categories`)
       .then(resp => dispatch({type: 'LOAD_CATEGORIES', payload: resp.data}));
-    axios.get('/api/Products').then(resp => dispatch({type: 'LOAD_PRODUCTS', payload: resp.data}));
     axios
-      .get('/api/ProductImages')
+      .get(`${API}/api/Products`)
+      .then(resp => dispatch({type: 'LOAD_PRODUCTS', payload: resp.data}));
+    axios
+      .get(`${API}/api/ProductImages`)
       .then(resp => dispatch({type: 'LOAD_IMAGES', payload: resp.data}));
     axios
-      .get('/api/ProductVariations')
+      .get(`${API}/ProductVariations`)
       .then(resp => dispatch({type: 'LOAD_VARIATIONS', payload: resp.data}));
     axios
-      .get('/api/ProductVariationProperties')
+      .get(`${API}/ProductVariationProperties`)
       .then(resp => dispatch({type: 'LOAD_VARIATION_PROPERTIES', payload: resp.data}));
     axios
-      .get('/api/ProductVariationPropertyValues')
+      .get(`${API}/ProductVariationPropertyValues`)
       .then(resp => dispatch({type: 'LOAD_VARIATION_PROPERTY_VALUES', payload: resp.data}));
     axios
-      .get('/api/ProductVariationPropertyListValues')
+      .get(`${API}/ProductVariationPropertyListValues`)
       .then(resp => dispatch({type: 'LOAD_VARIATION_PROPERTY_LIST_VALUES', payload: resp.data}));
     dispatch({type: 'CREATE_ORDER'});
   }, []);
