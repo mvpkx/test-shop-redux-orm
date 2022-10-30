@@ -6,6 +6,7 @@ import ProductModal from '../product-modal/product-modal';
 import {useSelector} from 'react-redux';
 import {imagesSelector} from '../../../models/selectors';
 import {RootState} from '../../../types/redux-orm-extra-types';
+import {API} from '../../../utils/constants';
 
 interface ProductCardProps {
   product: ProductFields;
@@ -24,7 +25,7 @@ export default function ProductCard({product}: ProductCardProps): JSX.Element {
         {images.length !== 0 ? (
           <img
             key={images[0].id}
-            src={images[0].image_url}
+            src={API + images[0].image_url}
             className={styles.image}
             alt={product.name}
           />

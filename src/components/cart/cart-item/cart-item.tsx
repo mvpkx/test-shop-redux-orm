@@ -2,6 +2,7 @@ import React from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import {imagesSelector, productSelector, variationSelector} from '../../../models/selectors';
 import {RootState} from '../../../types/redux-orm-extra-types';
+import { API } from '../../../utils/constants';
 import numberWithSpaces from '../../../utils/number-with-spaces';
 import styles from './cart-item.module.css';
 import {ReactComponent as DeleteIcon} from './delete.svg';
@@ -37,7 +38,7 @@ export default function CartItem({
         {images.length !== 0 ? (
           <img
             key={images[0].id}
-            src={images[0].image_url}
+            src={API + images[0].image_url}
             className={styles.image}
             alt={product.name}
           />

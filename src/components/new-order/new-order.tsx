@@ -110,7 +110,9 @@ export default function NewOrder(): JSX.Element {
               <p>{numberWithSpaces(total + DELIVERY_PRICE)}₽</p>
             </div>
           </div>
-          <button className={styles.button} type="submit">Сделать заказ</button>
+          <button className={styles.button} type="submit">
+            Сделать заказ
+          </button>
         </div>
       </form>
     </div>
