@@ -13,6 +13,7 @@ import {RootState} from '../../types/redux-orm-extra-types';
 import numberWithSpaces from '../../utils/number-with-spaces';
 import CartItem from './cart-item/cart-item';
 import {useNavigate} from 'react-router-dom';
+import { GIT_REPOSITORY } from '../../utils/constants';
 
 export default function Cart(): JSX.Element {
   const dispatch = useDispatch();
@@ -35,7 +36,7 @@ export default function Cart(): JSX.Element {
     .reduce((sum: number, el: number) => sum + el, 0);
 
   const handleNewOrderClick = () => {
-    navigate('/new-order');
+    navigate(`${GIT_REPOSITORY}/new-order`);
   };
 
   return (

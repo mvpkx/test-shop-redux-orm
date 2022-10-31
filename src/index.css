@@ -2,15 +2,11 @@
 
 body, html { 
   font-family: 'raleway', sans-serif;
+  width: 100%;
   height: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 #root {
   width: 1366px;
+  margin: auto;
 }

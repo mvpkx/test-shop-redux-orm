@@ -8,7 +8,7 @@ import NewOrderPage from './pages/new-order-page';
 import OrdersPage from './pages/orders-page';
 import RecommendedPage from './pages/recommended-page';
 import {useDispatch} from 'react-redux';
-import {API} from './utils/constants';
+import {API, GIT_REPOSITORY} from './utils/constants';
 
 function App(): JSX.Element {
   const dispatch = useDispatch();
@@ -39,11 +39,11 @@ function App(): JSX.Element {
 
   return (
     <Routes>
-      <Route path="/" element={<RecommendedPage />} />
-      <Route path="/recommended" element={<RecommendedPage />} />
-      <Route path="/orders" element={<OrdersPage />} />
-      <Route path="/new-order" element={<NewOrderPage />} />
-      <Route path="/cart" element={<CartPage />} />
+      <Route path={`${GIT_REPOSITORY}/`} element={<RecommendedPage />} />
+      <Route path={`${GIT_REPOSITORY}/recommended`} element={<RecommendedPage />} />
+      <Route path={`${GIT_REPOSITORY}/orders`} element={<OrdersPage />} />
+      <Route path={`${GIT_REPOSITORY}/new-order`} element={<NewOrderPage />} />
+      <Route path={`${GIT_REPOSITORY}/cart`} element={<CartPage />} />
     </Routes>
   );
 }

@@ -7,7 +7,7 @@ import {
   variationSelector,
 } from '../../models/selectors';
 import {RootState} from '../../types/redux-orm-extra-types';
-import {DELIVERY_PRICE} from '../../utils/constants';
+import {DELIVERY_PRICE, GIT_REPOSITORY} from '../../utils/constants';
 import numberWithSpaces from '../../utils/number-with-spaces';
 import styles from './new-order.module.css';
 
@@ -50,7 +50,7 @@ export default function NewOrder(): JSX.Element {
         },
       },
     });
-    navigate('/');
+    navigate(`${GIT_REPOSITORY}/`);
   };
 
   return (
