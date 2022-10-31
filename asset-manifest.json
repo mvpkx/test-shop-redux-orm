@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/test-shop-redux-orm/static/css/main.5c105882.css",
-    "main.js": "/test-shop-redux-orm/static/js/main.2a1bc52b.js",
+    "main.js": "/test-shop-redux-orm/static/js/main.5096c676.js",
     "static/media/google-play.svg": "/test-shop-redux-orm/static/media/google-play.ef5d9c7aac789b792b373c9516616785.svg",
     "static/media/app-store.svg": "/test-shop-redux-orm/static/media/app-store.4673275b1f66f96d0e3dcb692afd2922.svg",
     "static/media/bags.svg": "/test-shop-redux-orm/static/media/bags.3b26bebda5413d3b2cb33ff139f30854.svg",
@@ -17,10 +17,10 @@
     "static/media/facebook.svg": "/test-shop-redux-orm/static/media/facebook.178805c4c66ce8b50e6a94500aaba0e2.svg",
     "static/media/search-icon.svg": "/test-shop-redux-orm/static/media/search-icon.2fd54c2a30f7c29eabe658cb6d31f968.svg",
     "main.5c105882.css.map": "/test-shop-redux-orm/static/css/main.5c105882.css.map",
-    "main.2a1bc52b.js.map": "/test-shop-redux-orm/static/js/main.2a1bc52b.js.map"
+    "main.5096c676.js.map": "/test-shop-redux-orm/static/js/main.5096c676.js.map"
   },
   "entrypoints": [
     "static/css/main.5c105882.css",
-    "static/js/main.2a1bc52b.js"
+    "static/js/main.5096c676.js"
   ]
 }
